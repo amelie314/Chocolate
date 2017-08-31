@@ -1,22 +1,35 @@
 @charset "UTF-8";
 * {
   font-family: 微軟正黑體;
-  vertical-align: top;
 }
 
 html, body {
-  background-color: #222;
+  background-color: #800000;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 html h2, body h2 {
   font-size: 20px;
 }
 html .all, body .all {
+  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: solid 2px;
+  border-radius: 10px;
+  overflow: hidden;
   background-color: white;
-  width: 100%;
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -31,10 +44,14 @@ html .all .right, body .all .right {
   width: 65%;
 }
 html .all .right ul, body .all .right ul {
-  padding: 5px;
+  padding: 0px;
 }
 html .all .right ul li, body .all .right ul li {
   padding: 5px;
+  color: brown;
   display: inline-block;
   width: 30%;
+}
+html .all .right ul li p, body .all .right ul li p {
+  color: #222;
 }
